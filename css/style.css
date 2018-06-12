@@ -8,6 +8,12 @@ body{
     background-position: center;
     font-family: 'Hogfish';
  }
+ a,
+ a:hover,
+ a:focus{ text-decoration: none; }
+a.btn-default:hover,
+a.btn-default:focus{ background-color: #f0c600; color: #fff;}
+a.btn-default:active{ background-color: #cca800; color: #fff; }
  .image-responsive {
      height: 100%;
      width: 100%;
@@ -30,7 +36,7 @@ body{
 .justify-content-center {
     justify-content: center;
 }
-.justify-content-rigth {
+.justify-content-right {
 justify-content: right;
 }
 .icon {
@@ -51,10 +57,10 @@ justify-content: right;
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.text-rigth {
+.text-right {
     text-align: right
 }
-.float-rigth {
+.float-right {
     float: right;
 }
 .rotate {
@@ -110,7 +116,7 @@ justify-content: right;
 .people-right { 
     height: 78%; 
     position: fixed; 
-    right: -120px; 
+    right: 0px; 
     bottom: 0px; }
 
 .people-left > img, .people-right > img { 

@@ -20,16 +20,20 @@
 
 <body>
 
-
   <div class="container heigth-100 overflow-hidden">
+
     <div class="heigth-12 flex align-center justify-content-center-desktop header">
       <img class="icon" src="images/el-reto-logo-min.png" alt="">
     </div>
+
     <div class="heigth-80 flex align-center justify-content-center row">
+      
       <div class="people-right display-none display-block">
         <img class="img-responsive" src="images/2-min.png" alt="">
       </div>
+
       <div class="col-xs-12 col-md-4 col-lg-5">
+
         <div class="row">
           <div class="col-md-12 pd-lr-20">
             <img class="img-responsive" src="images/logo-befimetro-min.png" alt="">
@@ -37,14 +41,20 @@
         </div>
 
         <div class="flex justify-content-center pd-l-15">
-          <div class="rotate float-rigth">
-            <h1 class="text-rigth pd-t-b-15 fz-movil">Pon a prueba su nivel
+
+          <div class="rotate float-right ">
+
+            <h1 class="text-right pd-t-b-15 fz-movil">Pon a prueba su nivel
               <br>de amistad
               <br>
             </h1>
-            <a class="text-rigth btn-default float-rigth fz-movil" href="javascript:void(0)" class="btn btn-default" onclick="fbLogin()">Aquí</a>
+
+            <a class="text-right btn-default float-right fz-movil" href="javascript:void(0)" class="btn btn-default" onclick="fbLogin()">Aquí</a>
+
           </div>
+
         </div>
+
       </div>
       <div class="people-left display-none display-block">
         <img class="img-responsive" src="images/1-min.png" alt="">
@@ -57,10 +67,7 @@
 
 
 
-
-
-
-  <div class="">
+  <div id="response_data">
     <!--
 		<div id="status"></div>
 		<a href="javascript:void(0);" onclick="fbLogin()" id="fbLink"><img src="images/fblogin.jpg" width="200px;" /></a>
@@ -91,6 +98,9 @@
         if (response.status === 'connected') {
           //display user data
           getFbUserData();
+        }else (response.status == 'not_authorized')
+        {
+          alert('Debes otorgar los permisos a Beffimetro.');
         }
 
       });
