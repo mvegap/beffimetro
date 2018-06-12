@@ -1,0 +1,142 @@
+@font-face{ font-family: 'Hogfish';src:url('../fonts/hogfish.otf'); }
+
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Hogfish'; }
+body{ 
+    background-image: url('../images/movil.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Hogfish';
+ }
+ .image-responsive {
+     height: 100%;
+     width: 100%;
+ }
+ .heigth-100 {
+     height: 100vh;
+ }
+ .heigth-12 {
+     height: 12vh;
+ }
+ .heigth-80 {
+    height: 80vh;
+}
+.flex {
+    display: flex;
+} 
+.align-center {
+    align-items: center
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-rigth {
+justify-content: right;
+}
+.icon {
+    max-height:9vh; 
+}
+.header {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.pd-t-10 {
+    padding-top: 0;
+}
+.pd-r-20 {
+    padding-right: 20px;
+}
+.pd-t-b-15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.text-rigth {
+    text-align: right
+}
+.float-rigth {
+    float: right;
+}
+.rotate {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.btn-default { 
+    background-color: #00923a; 
+    color: #fff; font-family: 'Hogfish'; 
+    box-shadow: none; 
+    
+    padding-left: 3vh; 
+    padding-right: 3vh; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    border-radius: 10px; 
+    border:none; }
+
+    
+    .display-none {
+        display: none;
+      }
+.overflow-hidden {
+    overflow: hidden;
+}
+.pd-l-15 {
+    padding-left: 4vw;
+}
+@media (min-width: 576px) { 
+    .pd-t-4 {
+        padding-top: 4%;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+    .fz-movil {
+        font-size: 30px;
+    }
+    .pd-l-15 {
+        padding-left: 2vw;
+    }
+ }
+ .people-left{ 
+    height: 90%; 
+    position: fixed; 
+    left: -30px; 
+    bottom: 0px; 
+}
+
+.people-right { 
+    height: 78%; 
+    position: fixed; 
+    right: -120px; 
+    bottom: 0px; }
+
+.people-left > img, .people-right > img { 
+        height: 100%; 
+    }
+
+    .fz-movil {
+        font-size: 20px;
+    }
+    .pd-lr-20 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    body{ 
+        background-image: url('../images/bg-min.png');
+    }
+    .display-block {
+        display: block !important;
+      } 
+      .justify-content-center-desktop {
+        justify-content: center;
+    }
+    .fz-movil {
+        font-size: 42px;
+    }
+ }

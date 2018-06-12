@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CANVAS</title>
+</head>
+<body>
+
+	<div id="myCanvas"></div>
+
+
+	<div id="canvas_id"></div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		
+		var c = document.getElementById("myCanvas");
+
+    var ctx = c.getContext("2d");
+
+    var imageObj1 = new Image();
+    var imageObj2 = new Image();
+    
+    imageObj1.src = "1.png"
+    
+    imageObj1.onload = function() {
+       ctx.drawImage(imageObj1, 0, 0, 1200, 630);
+       imageObj2.src = "2.png";
+       imageObj2.onload = function() {
+          ctx.drawImage(imageObj2, 15, 85, 500, 500);
+          var img = c.toDataURL("image/png");
+          document.write('<img src="' + img + '" width="1200" height="630"/>');
+       }
+    };
+
+    var canvas = document.getElementById('canvas_id');  
+    var context = canvas.getContext('2d');  
+    var imageObj1 = new Image();  
+    imageObj1.src = "1.png"  
+    imageObj1.onload = function() {    
+    	context.drawImage(imageObj1, x, y);  
+    };
+    var imageObj2 = new Image();  
+    imageObj2.src = "2.png"  
+    imageObj2.onload = function() {    
+    	context.drawImage(imageObj2, x, y);  
+    };
+
+
+	</script>
+</body>
+</html>
